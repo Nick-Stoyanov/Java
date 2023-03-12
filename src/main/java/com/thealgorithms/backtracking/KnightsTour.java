@@ -36,8 +36,12 @@ public class KnightsTour {
         { -2, -1 },
         { -1, -2 },
     }; // Possible moves by knight on chess
-    private static int[][] grid; // chess grid
-    private static int total; // total squares in chess
+   
+    // chess grid
+    private static int[][] grid;
+   
+    // total squares in chess 
+    private static int total; 
 
     public static void main(String[] args) {
         grid = new int[base][base];
@@ -61,9 +65,8 @@ public class KnightsTour {
         } else {
             System.out.println("no result");
         }
-    }
-
-    // Return True when solvable
+    }.
+    // Return True if solvable
     private static boolean solve(int row, int column, int count) {
         if (count > total) {
             return true;
